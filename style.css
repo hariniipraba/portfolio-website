@@ -1,0 +1,280 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    background-color: white;
+    color: steelblue;
+}
+
+.container {
+    margin: auto;
+    max-width: 940px;
+    padding: 3vw;
+}
+
+.nav {
+    background: steelblue;
+    min-height: 5vh;
+    width: 100%;
+    font-size: 18px; 
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: inline;
+}
+
+.nav ul li {
+    display: inline-block;
+    color: whitesmoke;
+    font-size:larger;
+    line-height: 60px;
+    padding: 0 60px;
+    transition: background .5s;
+}
+
+.nav ul li a {
+    position: relative;
+    padding: 16px 20px;
+}
+
+.nav ul li a:link, .nav ul li a:visited {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav ul li a:hover, .nav ul li a:active {
+    background:black;
+    color: lightsteelblue;
+    cursor: pointer;
+}
+
+.header {
+    min-height: 600px;
+    padding-top: 5vh;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    max-width: 50%;
+}
+
+.header p {
+    font-size: 2vw;
+    max-width: 50%;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+}
+
+
+.header img {
+    float: right;
+    padding-top: 50px;
+    max-width: 50%;
+    max-height: 42.84%;
+}
+
+.me {
+    min-height: 300px;
+    background-color: steelblue;
+    color: whitesmoke;
+    padding: 20px;
+    min-width: 100%;
+}
+
+.me .container h1 {
+    font-size: 45px;
+}
+
+.me .container p {
+    font-size: 20px;
+}
+
+.projects {
+    min-height: 650px;
+    padding-top: 100px;
+}
+
+.projects .container h1 {
+    font-size: 45px;
+}
+
+.projects .container h2 {
+    font-size: 30px;
+}
+
+.projects .container .projcont {
+    padding-top: 70px;
+}
+
+.projects .container .limswitchlink {
+    float: left;
+    padding: 0 40px 0 90px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.projects .container .limswitchlink h3 a:link, .projects .container .limswitchlink h3 a:visited {
+    color: steelblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.projects .container .limswitchlink h3 a:hover, .projects .container .limswitchlink h3 a:active {
+    color: black;
+    background-color: lightsteelblue;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.projects .container .limswitchlink img {
+    float: top;
+}
+
+.projects .container .bucklink {
+    float: right;
+    padding: 0 90px 0 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.projects .container .bucklink h3 a:link, .projects .container .bucklink h3 a:visited {
+    color: steelblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.projects .container .bucklink h3 a:hover, .projects .container .bucklink h3 a:active {
+    color: black;
+    background-color: lightsteelblue;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.projects .container .bucklink img {
+    float: top;
+}
+
+.projects .container .change {
+    float: bottom;
+}
+
+.buck {
+    min-height: 800px;
+    padding-bottom: 100px;
+    min-width: 100%;
+}
+
+.buck .container h2 {
+    font-size: 30px;
+    padding-top: 25vh;
+}
+
+.buck .container p {
+    font-size: 20px;
+}
+
+.buck img {
+    width: 70vw;
+}
+
+.lim {
+    min-height: 700px;
+    padding-top: 20vh;
+    min-width: 100%;
+}
+
+.lim .container h2 {
+    font-size: 30px;
+}
+
+.lim .container p {
+    font-size: 20px;
+}
+
+.lim .container .limswpcb {
+    float: left;
+    max-width: 50%;
+}
+
+.lim .container .pcb {
+    float: left;
+    padding: 15px 0 40px;
+    max-width: 50%;
+}
+
+.lim .container .schem {
+    float: right;
+    padding: 30px 0 110px;
+    max-width: 50%;
+}
+
+.contact {
+    min-height: 220px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+    min-width: 101%;
+}
+
+.contact .container h1 {
+    font-size: 35px;
+}
+
+.mail {
+    position: relative;
+    left: 20px;
+}
+
+.btn:link, .btn:visited {
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: 0;
+    width: 0;
+    background: lightsteelblue;
+    transition: width .2s;
+}
+
+.btn:hover:after {  
+    width: 100%;
+}
+
+.contact .container img {
+    float: left;
+}
+
+
+@media (max-width:500px) {
+    .header h1 {
+        font-size: 50px;
+    }
+    
+    .header p {
+        font-size: 10px;
+    }
+}

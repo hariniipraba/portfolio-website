@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harinii Prabaharan Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <img src="images/headshot.png" height="428.4" width="423.5">
+            <div class="text">
+                <h1>Harinii Prabaharan</h1>
+                <p>Engineering Science Student</p>
+                <p>University of Toronto, St. George</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="me" id="me">
+        <div class="container">
+            <h1>Who Am I?</h1>
+            <p>I am a second-year Engineering Science student at the University 
+                of Toronto with a strong academic foundation and a genuine passion 
+                for learning and growth. My diverse experiences have helped me develop 
+                a versatile skill set, allowing me to tackle challenges from different 
+                angles. I'm always eager to expand my knowledge, take on new challenges, 
+                and grow both personally and professionally. I am particularly interested 
+                in electronics and robotics, as reflected in my personal projects, 
+                such as building a Buck Converter and Limit Switches.</p>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <h2>Design Team: Robotics for Space Exploration</h2>
+            <div class="projcont">
+                <div class="limswitchlink">
+                    <img src="images/pcb.png" height="109.4" width="236.9">
+                    <h3><a href="#lim">Limit Switch</a></h3>
+                </div>
+                <div class="bucklink">
+                    <img class="schem" src="images/schem2.png" height="122.4" width="254">
+                    <h3><a href="#buck">Buck Converter</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lim" id="lim">
+        <div class="container">
+            <h2>Limit Switches</h2>
+            <p>These limit switches were designed to prevent the rover arm from exceeding 
+                a 360° rotation. The system uses three Hall sensors to detect magnetic field 
+                changes. When two of the sensors register the same reading, it signals that 
+                a rotation limit has been reached. Based on which pair of sensors triggers 
+                the limit, the arm adjusts its movement and rotates in the appropriate 
+                direction to stay within bounds.</p>
+                <img class="limswpcb" src="images/limswpcb.png" height="200" width="450">
+                <img class="schem" src="images/schem.JPEG" height="306.82" width="389.09">
+                <img class="pcb" src="images/pcb.png" height="218.8" width="473.8">
+        </div>
+    </div>
+
+    <div class="buck" id="buck">
+        <div class="container">
+            <h2>Buck Converter</h2>
+            <p>I am currently designing and building a buck converter with a focus on maximizing
+                the switching frequency while minimizing the size of the PCB. My goal is to 
+                achieve high efficiency and stable output voltage in a small form factor, 
+                making it suitable for modern electronics applications. This project involves 
+                extensive testing and fine-tuning of components such as inductors, capacitors, 
+                and the control circuit to ensure reliable operation under varying loads. It is 
+                a hands-on exploration of power electronics and PCB design, further deepening my 
+                understanding of circuit efficiency and system optimization.</p>
+            <img class="schem" src="images/schem2.png" height="428.4" width="889">
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+                <img src="images/mail.png" height="20" width="20">
+                <p class="mail">hariniipraba@gmail.com</p>
+                <img src="images/linkedin.png" height="20" width="20">
+                <p><a class="btn" href="https://www.linkedin.com/in/harinii-prabaharan-4b4b0529a" target="_blank">LinkedIn</a></p>
+                <img src="images/github.jpg" height="20" width="20">
+                <p><a class="btn" href="https://github.com/hariniipraba" target="blank">GitHub</a></p>
+                <img src="images/resume.jpg" height="20" width="20">
+                <a class="btn" href="resume.html" target="_blank">Resume</a>
+        </div>
+    </div>
+</body>
+</html>
